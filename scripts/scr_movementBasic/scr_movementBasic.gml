@@ -2,6 +2,9 @@
 mSpeed = argument0;
 gravy = argument1;
 yy = argument2;
+sprMain = argument3;
+sprCrouch = argument4;
+sprJump = argument5;
 //GatherInputs
 Jump = keyboard_check_pressed(ord("W"));
 mLeft = keyboard_check(ord("A"));
@@ -22,7 +25,7 @@ else
 //crouch animation
 if(Crouch)
 {
-	sprite_index = s_player1Crou;
+	sprite_index = sprCrouch;
 	if(image_index > 2)
 	{
 		image_speed = 0;
@@ -33,7 +36,7 @@ if(Crouch)
 //left and right
 if((mLeft)||(mRight))
 {
-	sprite_index = s_player1;
+	sprite_index = sprMain;
 }
 xx = mRight - mLeft;
 x += xx * mSpeed;

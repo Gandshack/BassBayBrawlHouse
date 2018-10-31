@@ -50,7 +50,7 @@
             "Key": "13048713-a5c7-401c-93e1-abfad7fbd292",
             "Value": {
                 "id": "1abdb8ff-e7c0-4773-a2d8-4f6079cf3701",
-                "resourcePath": "sprites\\s_player1Crou\\s_player1Crou.yy",
+                "resourcePath": "sprites\\s_player1Crouch\\s_player1Crouch.yy",
                 "resourceType": "GMSprite"
             }
         },
