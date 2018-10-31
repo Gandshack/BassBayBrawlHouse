@@ -1,18 +1,12 @@
-
-//Variables
-mSpeed = 2;
+//Arguments
+mSpeed = argument0;
 //GatherInputs
 Jump = keyboard_check(ord("W"));
 mLeft = keyboard_check(ord("A"));
-mLeftRele = keyboard_check_released(ord("A"));
 mRight = keyboard_check(ord("D"));
 Crouch = keyboard_check(ord("S"));
-
 //Interperate Inputs
-
 //Left and Right
-
-
 if (!mLeft && !mRight && !Crouch) {
 	sprite_index = s_player1;
 	image_index = 0;
