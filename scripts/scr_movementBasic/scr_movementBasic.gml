@@ -7,22 +7,30 @@ mRight = keyboard_check(ord("D"));
 Crouch = keyboard_check(ord("S"));
 //Interperate Inputs
 //Left and Right
-if (!mLeft && !mRight && !Crouch) {
-	sprite_index = s_player1;
+if(!keyboard_key)
+{
+	image_speed = 0;
 	image_index = 0;
-}
-if (Crouch) {
-	sprite_index = s_player1Crou;
-	mSpeed = 0;
-	if image_index == 2 && sprite_index == s_player1Crou {
-		image_speed = 0;
-	}
-}
-else {
 	mSpeed = 2;
-	image_speed = 1;
+}
+else
+{
+	image_speed = 1;	
 }
 
+if(Crouch)
+{
+	sprite_index = s_player1Crou;
+	if(image_index > 2)
+	{
+		image_speed = 0;
+		mSpeed = 0;
+	}
+}
+else
+{
+	sprite_index = s_player1;	
+}
 xx = mRight - mLeft;
 x += xx * mSpeed;
 
