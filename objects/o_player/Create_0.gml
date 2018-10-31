@@ -1,3 +1,3 @@
 mSpeed = 2;
-gravy = 2;
-volcity = 0
+gravy = .5;
+yy = 0;

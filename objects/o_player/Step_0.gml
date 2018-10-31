@@ -1,1 +1,1 @@
-scr_movementBasic(mSpeed);
+scr_movementBasic(mSpeed,gravy,yy);
