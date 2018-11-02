@@ -26,13 +26,16 @@ else
 if(Crouch)
 {
 	sprite_index = sprCrouch;
-	if(image_index > sprite_index + 1)
+	if(image_index > 2)
 	{
 		image_speed = 0;
 		mSpeed = 0;
 	}
 }
-
+else
+{
+	sprite_index = s_player1;	
+}
 //if left or right and not crouching move
 if(((mLeft)||(mRight))&&!Crouch)
 {
