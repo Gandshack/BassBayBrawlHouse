@@ -51,8 +51,11 @@ else if(place_meeting(x,y+1,o_floorMask))
 }
 if(Jump && yy == 0)
 {
-		yy = -12;
+	yy = -12;
 }
+
+
+
 y += yy;
 
 
