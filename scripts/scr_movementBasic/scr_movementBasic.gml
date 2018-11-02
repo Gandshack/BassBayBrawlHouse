@@ -43,11 +43,11 @@ if(((mLeft)||(mRight))&&!Crouch)
 	//changes direction player faces(work in progress)
 	if(mRight)
 	{
-		image_xscale = sign(1); 
+		image_xscale = 1; 
 	}
 	else if(mLeft)
 	{
-		image_xscale = sign(-1);
+		image_xscale = -1
 	}
 	//if in the air, player moves slower(work in progress)
 	if(!place_meeting(x,y+1, o_floorMask))
@@ -70,9 +70,41 @@ else if(place_meeting(x,y+1,o_floorMask))
 {
 	yy = 0;
 }
-if(Jump && yy == 0)
-{
-	yy = -12;
+//jumping animation (WIP)
+if(Jump && yy == 0)//checks if jump key is pressed and on the ground
+{	
+	sprite_index = sprJump; //sets sprite
+	image_speed = 0 //stops animation
+	framecount = 0 //sets variable used to count frames
+	for(i = 0; i < 60; i++)// for loop checks 60 times 60fps
+	{
+		framecount ++;// evrey check adds to the counter
+		switch(framecount)// changes image depending on framenumber(framecount)
+		{
+			case 0: //no frames first image in animation
+				image_index = 0;
+				break;
+			case 10://10 frames later goes to next image
+				image_index = 1;
+				break;
+			case 20://20 frames it initiates jump on 3rd image in animation
+				image_index = 2;
+				yy = -12;
+				break;
+			case 30://...
+				image_index = 3;
+				break;
+			case 40://...
+				image_index = 4;
+				break;
+			case 50://...
+				image_index = 5;
+				break;
+			case 60://...
+				break;
+		}
+	}
+
 }
 
 
