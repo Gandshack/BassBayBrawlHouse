@@ -1,0 +1,1 @@
+scr_movementBasic(mSpeed,gravy,yy,sprMain,sprCrouch,sprJump); //allows for movement

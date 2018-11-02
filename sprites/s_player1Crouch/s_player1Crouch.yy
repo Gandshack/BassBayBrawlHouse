@@ -2,7 +2,7 @@
     "id": "13048713-a5c7-401c-93e1-abfad7fbd292",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_player1Crou",
+    "name": "s_player1Crouch",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -98,7 +98,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 9,
     "originLocked": false,
     "playbackSpeed": 10,
     "playbackSpeedType": 0,
@@ -110,5 +110,5 @@
     "type": 0,
     "width": 64,
     "xorig": 0,
-    "yorig": 0
+    "yorig": 128
 }
